@@ -2,6 +2,7 @@ import BlogCard from "../components/BlogCard";
 import Header from "../components/Header";
 import { useContext } from "react";
 import { DataContext } from "../context/DataContext";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const {filteredData: postData} = useContext(DataContext);
@@ -15,6 +16,7 @@ export default function Home() {
           ))}
         </div>
       </main>
+      <Footer/>
     </div>
   );
 }

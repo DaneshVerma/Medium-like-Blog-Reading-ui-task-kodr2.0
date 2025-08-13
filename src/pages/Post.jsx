@@ -2,6 +2,7 @@ import { useParams } from "react-router";
 import posts from "../data/posts.json";
 import ReactMarkdown from "react-markdown";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Post() {
   const { id } = useParams();
@@ -45,6 +46,7 @@ export default function Post() {
         </div>
         <ReactMarkdown>{post.body}</ReactMarkdown>
       </article>
+      <Footer />
     </div>
   );
 }
