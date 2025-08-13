@@ -1,12 +1,17 @@
 import { Link } from "react-router";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { DataContext } from "../context/DataContext";
 
 export default function Header() {
   const [searchQuery, setSearchQuery] = useState("");
-
+  const { postData,setFilteredData} = useContext(DataContext);  
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
-    // Optionally, add logic to handle search input (e.g., filtering posts or triggering search)
+    if (e.target.value === "") {
+      setFilteredData(postData);
+    }else {
+      setFilteredData(postData.filter((post) => post.title.toLowerCase().startsWith(e.target.value.toLowerCase())));
+    }
   };
 
   return (

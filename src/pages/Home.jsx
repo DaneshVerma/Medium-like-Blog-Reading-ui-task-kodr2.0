@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { DataContext } from "../context/DataContext";
 
 export default function Home() {
-  const {postData} = useContext(DataContext);
+  const {filteredData: postData} = useContext(DataContext);
   return (
     <div className='min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors'>
       <Header />
