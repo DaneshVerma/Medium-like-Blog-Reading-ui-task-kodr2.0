@@ -12,21 +12,24 @@ export default function Post() {
   return (
     <div className='min-h-screen text-black dark:text-white bg-gray-50 dark:bg-gray-900 transition-colors'>
       <Header />
-      <article className='prose lg:prose-xl dark:prose-invert mx-auto py-10 max-w-3xl'>
+      <article className='prose lg:prose-xl dark:prose-invert mx-auto py-8 px-4 max-w-3xl'>
         <img
           src={post.banner}
           alt={post.title}
           className='rounded-xl w-full mb-7'
         />
-        <h1>{post.title}</h1>
-        <div className='flex items-center gap-3 mb-5'>
-          <img
-            src={post.avatar}
-            alt={post.author}
-            className='w-10 h-10 rounded-full'
-          />
+        <h1 className="font-semibold">{post.title}</h1>
+        <div className='flex items-center gap-3 my-5'>
+          <div className='w-10 h-10  rounded-full overflow-hidden'>
+            <img
+              src={post.avatar}
+              alt={post.author}
+              className='object-cover w-full h-full rounded-full'
+            />
+          </div>
+
           <span className='font-medium'>{post.author}</span>
-          <span className='text-gray-400 dark:text-gray-500 text-xs'>
+          <span className='text-gray-400 w-fit dark:text-gray-500 text-xs'>
             {post.date}
           </span>
         </div>

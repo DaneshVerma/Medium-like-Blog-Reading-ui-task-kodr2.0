@@ -38,7 +38,7 @@ export default function Header() {
           title="User Profile"
         >
           <img
-            src="https://picsum.photos/seed/usericon/40/40" 
+            src="https://images.unsplash.com/photo-1637833556150-69cb0d2d8f48" 
             alt="User Avatar"
             className="w-full h-full object-cover"
           />
