@@ -1,14 +1,15 @@
 [
   {
     "id": "1",
-    "title": "State Management in Modern Web Apps",
-    "excerpt": "Choosing the right tools and patterns for managing app state effectively.",
-    "banner": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200&q=80",
-    "author": "Oliver Grant",
-    "avatar": "https://plus.unsplash.com/premium_photo-1678197937465-bdbc4ed95815?w=100&q=80",
-    "date": "2025-08-14",
-    "tags": ["State", "React", "Redux"],
-    "body": "## Why State Management Matters\n\nAs apps grow, managing state consistently becomes critical.\n\n### Local State vs Global State\n\nLocal state is component-specific; global state is shared application-wide.\n\n### Libraries and Patterns\n\nRedux, MobX, Context API, and Zustand offer different trade-offs.\n\n### Choosing Wisely\n\nUnderstand your app's complexity to pick the simplest, most effective solution.\n\n### Best Practices\n\nKeep state minimal, immutable where possible, and updated predictably.\n\nEffective state management improves app responsiveness and developer sanity."
+    "title": "Mastering React Hooks for Cleaner Code",
+    "excerpt": "Deep dive into useState, useEffect, and custom hooks for scalable React apps.",
+    "banner": "https://images.unsplash.com/photo-1506765515384-028b60a970df?w=1200&q=80",
+    "author": "Emma Zhang",
+    "avatar": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=100&q=80",
+    "date": "2025-08-01",
+    "tags": ["React", "Hooks", "JavaScript"],
+        "body": "## Introduction\nClosures are one of JavaScript's most powerful features. They allow functions to remember variables from their scope even after the scope has finished executing.\n\n---\n\n### How They Work\nA closure is created when:\n1. You define a function inside another function.\n2. The inner function references variables from the outer function.\n\n```js\nfunction outer() {\n  let count = 0;\n  return function inner() {\n    count++;\n    console.log(count);\n  }\n}\n\nconst counter = outer();\ncounter(); // 1\ncounter(); // 2\n```\n\nIn this example, `count` stays alive because the inner function keeps a reference to it.\n\n---\n\n### Why They’re Useful\n- **Data privacy**\n- **Stateful functions**\n- **Function factories**\n\n> \"Closures let you store state without polluting the global scope.\"\n\n---\n\n### Common Pitfalls\n- Memory leaks from unused closures.\n- Confusion with `this` context.\n\n**Tip:** Always clean up references if the closure is no longer needed.\n\n---\n\n### Summary\nClosures give you the ability to write modular, maintainable code. Once you understand them, you'll start seeing them everywhere!"
+
   },
   {
     "id": "2",
@@ -100,13 +101,13 @@
   },
   {
     "id": "10",
-    "title": "Mastering React Hooks for Cleaner Code",
-    "excerpt": "Deep dive into useState, useEffect, and custom hooks for scalable React apps.",
-    "banner": "https://images.unsplash.com/photo-1506765515384-028b60a970df?w=1200&q=80",
-    "author": "Emma Zhang",
-    "avatar": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=100&q=80",
-    "date": "2025-08-01",
-    "tags": ["React", "Hooks", "JavaScript"],
-    "body": "## Why Hooks Improve Your React Code\n\nReact hooks revolutionize the way functional components manage state and side effects. With hooks like `useState` and `useEffect`, you write cleaner, more readable code free from lifecycle method clutter.\n\n### Understanding useState\n\nThe `useState` hook provides stateful variables in functional components. It's straightforward but powerful, enabling component-level state management without classes.\n\n### Side Effects Made Easy with useEffect\n\n`useEffect` runs code after render, perfect for effects like data fetching or subscriptions. Properly managing dependencies avoids bugs and performance issues.\n\n### Creating Custom Hooks\n\nCustom hooks let you encapsulate reusable logic. This abstraction promotes DRY code and enhances maintainability.\n\n### Best Practices\n\n- Keep hooks focused and small.\n- Use multiple hooks per component for clarity.\n- Avoid conditional hook calls.\n\nMastering hooks empowers you to build scalable, maintainable React applications."
+    "title": "State Management in Modern Web Apps",
+    "excerpt": "Choosing the right tools and patterns for managing app state effectively.",
+    "banner": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200&q=80",
+    "author": "Oliver Grant",
+    "avatar": "https://plus.unsplash.com/premium_photo-1678197937465-bdbc4ed95815?w=100&q=80",
+    "date": "2025-08-14",
+    "tags": ["State", "React", "Redux"],
+    "body": "## Why State Management Matters\n\nAs apps grow, managing state consistently becomes critical.\n\n### Local State vs Global State\n\nLocal state is component-specific; global state is shared application-wide.\n\n### Libraries and Patterns\n\nRedux, MobX, Context API, and Zustand offer different trade-offs.\n\n### Choosing Wisely\n\nUnderstand your app's complexity to pick the simplest, most effective solution.\n\n### Best Practices\n\nKeep state minimal, immutable where possible, and updated predictably.\n\nEffective state management improves app responsiveness and developer sanity."
   }
 ]
